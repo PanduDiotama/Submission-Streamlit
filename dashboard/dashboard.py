@@ -14,7 +14,7 @@ sns.set_style("whitegrid")
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("main_data.csv")
+    df = pd.read_csv("dashboardmain_data.csv")
     df["dteday"] = pd.to_datetime(df["dteday"])
     return df
 
